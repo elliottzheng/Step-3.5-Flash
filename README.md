@@ -13,6 +13,10 @@ base_model:
   <h1 style="margin: 0; border-bottom: none;">Step 3.5 Flash</h1>
 </div>
 
+<p align="center">
+    <strong>English</strong>&nbsp; | &nbsp;<a href="README.zh-CN.md">简体中文</a>
+</p>
+
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HF-StepFun/STEP3p5-preview)](https://huggingface.co/stepfun-ai/Step-3.5-Flash/tree/main)
 [![ModelScope](https://img.shields.io/badge/ModelScope-StepFun/STEP3p5-preview)](https://modelscope.cn/models/stepfun-ai/Step-3.5-Flash)
 [![Paper](https://img.shields.io/badge/Paper-Arxiv-red)](https://huggingface.co/stepfun-ai/Step-3.5-Flash/tree/main)

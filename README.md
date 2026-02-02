@@ -25,6 +25,17 @@ base_model:
 
 **Step 3.5 Flash** ([visit website](https://static.stepfun.com/blog/step-3.5-flash/)) is our most capable open-source foundation model, engineered to deliver frontier reasoning and agentic capabilities with exceptional efficiency. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. This "intelligence density" allows it to rival the reasoning depth of top-tier proprietary models, while maintaining the agility required for real-time interaction.
 
+### Contents
+- [Key Capabilities](#2-key-capabilities)
+- [Performance](#3-performance)
+- [Architecture Details](#4-architecture-details)
+- [Quick Start](#5-quick-start)
+- [Local Deployment](#6-local-deployment)
+- [Using Step 3.5 Flash on Agent Platforms](#7-using-step-35-flash-on-agent-platforms)
+- [Known Issues and Future Directions](#8-known-issues-and-future-directions)
+- [Co-Developing the Future](#9-co-developing-the-future)
+- [License](#license)
+
 ## 2. Key Capabilities
 
 - **Deep Reasoning at Speed**: While chatbots are built for reading, agents must reason fast. Powered by 3-way Multi-Token Prediction (MTP-3), Step 3.5 Flash achieves a generation throughput of **100–300 tok/s** in typical usage (peaking at **350 tok/s** for single-stream coding tasks). This allows for complex, multi-step reasoning chains with immediate responsiveness.
@@ -411,7 +422,7 @@ ccr -v
 
 Add the following configurations to `~/.claude-code-router/config.json`.
 
-```json 
+```json
 {
   "PORT": 3456,
   "Providers": [
@@ -457,7 +468,7 @@ codex --version
 2. Configure Codex
 Add the following settings to `~/.codex/config.toml`, keeping the rest of the settings as they are.
 
-```json
+```toml
 model="step-3.5-flash"
 model_provider = "stepfun-chat"
 preferred_auth_method = "apikey"
@@ -495,7 +506,7 @@ When finishing the configuration, run codex in a new Terminal window to start Co
 1. Use the reference environment setup below and configure `MODEL_NAME` to `Step-3.5-Flash`. [https://github.com/stepfun-ai/StepDeepResearch?tab=readme-ov-file#1-environment-setup](https://github.com/stepfun-ai/StepDeepResearch?tab=readme-ov-file#1-environment-setup)
 
 
-## 8. Limitations, Known Issues and Future Directions
+## 8. Known Issues and Future Directions
 
 1. **Token Efficiency**. Step 3.5 Flash achieves frontier-level agentic intelligence but currently relies on longer generation trajectories than Gemini 3.0 Pro to reach comparable quality.
 2. **Efficient Universal Mastery**. We aim to unify generalist versatility with deep domain expertise. To achieve this efficiently, we are advancing variants of on-policy distillation, allowing the model to internalize expert behaviors with higher sample efficiency.

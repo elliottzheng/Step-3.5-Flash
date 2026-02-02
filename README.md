@@ -13,8 +13,14 @@ base_model:
   <h1 style="margin: 0; border-bottom: none;">Step 3.5 Flash</h1>
 </div>
 
+<p align="center">
+    <strong>English</strong>&nbsp; | &nbsp;<a href="README.zh-CN.md">简体中文</a>
+</p>
+
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HF-StepFun/STEP3p5-preview)](https://huggingface.co/stepfun-ai/Step-3.5-Flash/tree/main)
 [![ModelScope](https://img.shields.io/badge/ModelScope-StepFun/STEP3p5-preview)](https://modelscope.cn/models/stepfun-ai/Step-3.5-Flash)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/RcMJhNVAQc)
+[![Chat with the model on OpenRouter](https://img.shields.io/badge/Chat%20with%20the%20model-OpenRouter-yellow)](https://openrouter.ai/chat?models=stepfun/step-3.5-flash:free)
 [![Paper](https://img.shields.io/badge/Paper-Arxiv-red)](https://huggingface.co/stepfun-ai/Step-3.5-Flash/tree/main)
 [![Webpage](https://img.shields.io/badge/Webpage-Blog-blue)](https://static.stepfun.com/blog/step-3.5-flash/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)]()
@@ -379,7 +385,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Users in China can set up npm mirror
-config set registry https://registry.npmmirror.com
+npm config set registry https://registry.npmmirror.com
 
 # Step 2
 nvm install v22
@@ -516,7 +522,7 @@ preferred_auth_method = "apikey"
 # configure the provider
 [model_providers.stepfun-chat]
 name = "OpenAI using response"
-base_url = "https://api.stepfun.com/v1"
+base_url = "https://api.stepfun.ai/v1"
 env_key = "OPENAI_API_KEY"
 wire_api = "chat"
 query_params = {}

@@ -36,7 +36,7 @@ base_model:
 - [快速上手](#5-快速上手)
 - [本地部署](#6-本地部署)
 - [Agent框架接入](#7-agent框架接入)
-- [功能限制、已知问题与未来方向](#8-已知问题与未来方向)
+- [已知问题与未来方向](#8-已知问题与未来方向)
 - [共创未来](#9-共创未来)
 - [License](#license)
 
@@ -583,6 +583,11 @@ npm --version
 
 - **加入阶跃星辰开发者社群**： ✨ 前沿资讯 + 免费Token + 工程师答疑 + 模型共创。
 - **报告遇到的问题**： 如果发现模型局限或遇到问题，既可以在 GitHub 上提 Issue，也可以直接在群里反馈。
+- 扫码即刻加入 👇
+
+<div align="center">
+  <img src="assets/stepfun-wechat-qr.png" alt="WeChat Group QR Code">
+</div>
 
 ## License
 本项目采用 [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0) 开源。
